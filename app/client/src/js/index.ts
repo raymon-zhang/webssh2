@@ -38,7 +38,51 @@ let logDate: {
 let currentDate: Date;
 let myFile: string;
 let errorExists: boolean;
-const term = new Terminal();
+
+const nord = {
+  nord0: "#2E3440",
+  nord1: "#3B4252",
+  nord2: "#434C5E",
+  nord3: "#4C566A",
+  nord4: "#D8DEE9",
+  nord5: "#E5E9F0",
+  nord6: "#ECEFF4",
+  nord7: "#8FBCBB",
+  nord8: "#88C0D0",
+  nord9: "#81A1C1",
+  nord10: "#5E81AC",
+  nord11: "#BF616A",
+  nord12: "#D08770",
+  nord13: "#EBCB8B",
+  nord14: "#A3BE8C",
+  nord15: "#B48EAD"
+};
+
+const term = new Terminal({
+    fontFmaily: "MesloLGS NF",
+    theme: {
+        background: nord.nord0,
+        black: nord.nord1,
+        blue: nord.nord9,
+        brightBlack: nord.nord3,
+        brightBlue: nord.nord9,
+        brightCyan: nord.nord7,
+        brightGreen: nord.nord14,
+        brightMagenta: nord.nord15,
+        brightRed: nord.nord11,
+        brightWhite: nord.nord6,
+        brightYellow: nord.nord13,
+        cursor: nord.nord4,
+        cyan: nord.nord8,
+        foreground: nord.nord4,
+        green: nord.nord14,
+        magenta: nord.nord15,
+        red: nord.nord11,
+        selection: "#424b5e",
+        white: nord.nord5,
+        yellow: nord.nord13,
+    },
+});
 // DOM properties
 const logBtn = document.getElementById('logBtn');
 const credentialsBtn = document.getElementById('credentialsBtn');
