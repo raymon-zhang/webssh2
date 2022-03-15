@@ -59,7 +59,7 @@ const nord = {
 };
 
 const term = new Terminal({
-    fontFmaily: "MesloLGS NF",
+    fontFamily: "MesloLGS NF",
     theme: {
         background: nord.nord0,
         black: nord.nord1,
